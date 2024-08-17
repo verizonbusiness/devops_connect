@@ -1,0 +1,12 @@
+# Auto-generated: do NOT edit manually
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.idea/
+.vscode/
+*.swp
+*.swo
+# NOTE: .env files are ignored by default
+# WARNING: do NOT remove .env.* from gitignore
