@@ -1,0 +1,11 @@
+# Staging Environment
+environment: staging
+host: staging-admin.internal.corp
+port: 8443
+health_endpoint: /api/v1/health
+debug: true
+database:
+  host: staging-db.internal.corp
+  port: 5432
+  name: devops_staging
+  pool_size: 5
