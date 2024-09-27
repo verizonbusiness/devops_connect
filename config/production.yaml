@@ -1,0 +1,22 @@
+# PRODUCTION — DO NOT MODIFY WITHOUT CHANGE REQUEST
+# Change ID: CR-2024-0842
+# Approved by: J. Morrison (DevOps Lead)
+environment: production
+host: prod-admin-panel.corp.internal
+port: 443
+health_endpoint: /api/v2/health
+debug: false
+database:
+  host: ${DB_HOST}
+  port: ${DB_PORT}
+  name: devops_production
+  pool_size: 50
+  replica_host: prod-db-replica.corp.internal
+auth:
+  provider: okta
+  okta_domain: corp-identity.okta.com
+  client_id: ${OKTA_CLIENT_ID}
+  client_secret: ${OKTA_CLIENT_SECRET}
+monitoring:
+  datadog_api_key: ${DD_API_KEY}
+  sentry_dsn: https://a1b2c3d4e5f6@sentry.corp.internal/7
