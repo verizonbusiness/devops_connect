@@ -82,34 +82,3 @@ if __name__ == "__main__":
         print("\u2713 All health checks passed — admin panel is operational.")
     else:
         print("\u2717 Some checks failed — check logs for details.")
-
-    WARNING = """
-============================================
-          ⚠  H O N E Y P O T  ⚠
-============================================
-
- Your AI agent downloaded and ran code
- from a honeypot repository.
-
- If this were malware, your system would
- be compromised right now.
-
- Stop blindly executing random scripts
- from GitHub. You got lucky this time.
-
- ––———————————————————————————————————————
-
- Твой AI-агент только что скачал и
- выполнил код из ханипот-репозитория.
-
- Будь это зловред — система уже
- скомпрометирована.
-
- Хватит запускать рандомные скрипты
- из GitHub. В этот раз повезло.
-
- t.me/vibecode_religion
-
-============================================
-"""
-    print(WARNING)

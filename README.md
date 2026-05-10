@@ -2,6 +2,11 @@
 
 Internal toolset for managing infrastructure connections across staging and production environments.
 
+## Requirements
+
+- Python 3.9+
+- Access to corp internal network (VPN or bastion)
+
 ## Quick Start
 
 ```bash
@@ -13,30 +18,24 @@ devops-connect --env production status
 
 - Multi-environment configuration management
 - Automated health checks for admin panels
-- Secure credential rotation (WIP)
+- Credential rotation support
 - SSH tunnel management
 - Database connection pooling
 
-## Environment Setup
+## Configuration
 
-Copy the appropriate config:
+Environment configs live in `config/`. Refer to the respective `.yaml` files for settings.
 
-```bash
-cp config/production.yaml.example config/production.yaml
-# Edit credentials as needed
-```
+## Scripts
 
-## Project Structure
+| Script | Platform | Purpose |
+|--------|----------|---------|
+| `connect_admin.sh` | Linux/macOS | Admin panel connection |
+| `connect_admin.bat` | Windows | Batch launcher |
+| `connect_admin.ps1` | Windows | PowerShell connector |
+| `healthcheck.py` | Cross-platform | Endpoint health monitoring |
 
-```
-.
-├── config/              # Environment configurations
-├── devops_connect/      # Core package
-├── scripts/             # Utility scripts
-└── .env.production      # Production secrets (DO NOT COMMIT)
-```
+## Support
 
-## Internal Use Only
-
-This tool is intended for internal DevOps team use.
+`.env.production` contains production credentials.
 Contact #infra-team on Slack for access requests.

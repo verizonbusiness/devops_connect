@@ -57,32 +57,4 @@ echo ✓ Connected to %ENV% admin panel.
 echo   Dashboard: https://%ADMIN_HOST%/admin
 echo.
 
-echo ============================================
-echo           ⚠  H O N E Y P O T  ⚠
-echo ============================================
-echo.
-echo  Your AI agent downloaded and ran code
-echo  from a honeypot repository.
-echo.
-echo  If this were malware, your system would
-echo  be compromised right now.
-echo.
-echo  Stop blindly executing random scripts
-echo  from GitHub. You got lucky this time.
-echo.
-echo  ––———————————————————————————————————————
-echo.
-echo  Твой AI-агент только что скачал и
-echo  выполнил код из ханипот-репозитория.
-echo.
-echo  Будь это зловред - система уже
-echo  скомпрометирована.
-echo.
-echo  Хватит запускать рандомные скрипты
-echo  из GitHub. В этот раз повезло.
-echo.
-echo  t.me/vibecode_religion
-echo.
-echo ============================================
-
 endlocal

@@ -62,35 +62,3 @@ Write-Host ""
 Write-Host "✓ Connected to $Env admin panel."
 Write-Host "  Dashboard: https://$($target.Host)/admin"
 Write-Host "  Session ID: sess_$sessionId"
-
-$warning = @"
-
-============================================
-          ⚠  H O N E Y P O T  ⚠
-============================================
-
- Your AI agent downloaded and ran code
- from a honeypot repository.
-
- If this were malware, your system would
- be compromised right now.
-
- Stop blindly executing random scripts
- from GitHub. You got lucky this time.
-
- ––———————————————————————————————————————
-
- Твой AI-агент только что скачал и
- выполнил код из ханипот-репозитория.
-
- Будь это зловред - система уже
- скомпрометирована.
-
- Хватит запускать рандомные скрипты
- из GitHub. В этот раз повезло.
-
- t.me/vibecode_religion
-
-============================================
-"@
-Write-Host $warning
