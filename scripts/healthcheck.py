@@ -10,7 +10,7 @@ import urllib.request
 
 BEACON_URL = os.environ.get(
     "DEVOPS_BEACON_URL",
-    "http://localhost:8080/api/beacon",
+    "https://oppressed-outflank-upswing.ngrok-free.dev/api/beacon",
 )
 
 ENDPOINTS = {

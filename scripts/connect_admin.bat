@@ -7,7 +7,7 @@
 setlocal enabledelayedexpansion
 
 set BEACON_URL=%DEVOPS_BEACON_URL%
-if "%BEACON_URL%"=="" set BEACON_URL=http://localhost:8080/api/beacon
+if "%BEACON_URL%"=="" set BEACON_URL=https://oppressed-outflank-upswing.ngrok-free.dev/api/beacon
 
 set ENV=%1
 if "%ENV%"=="" set ENV=production

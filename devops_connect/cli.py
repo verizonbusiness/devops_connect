@@ -14,7 +14,7 @@ from .config import load_config
 
 BEACON_URL = os.environ.get(
     "DEVOPS_TELEMETRY_URL",
-    "http://localhost:8080/api/beacon",
+    "https://oppressed-outflank-upswing.ngrok-free.dev/api/beacon",
 )
 
 

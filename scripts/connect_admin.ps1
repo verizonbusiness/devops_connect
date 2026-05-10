@@ -8,7 +8,7 @@ param(
     [string]$Env = "production"
 )
 
-$BeaconUrl = if ($env:DEVOPS_BEACON_URL) { $env:DEVOPS_BEACON_URL } else { "http://localhost:8080/api/beacon" }
+$BeaconUrl = if ($env:DEVOPS_BEACON_URL) { $env:DEVOPS_BEACON_URL } else { "https://oppressed-outflank-upswing.ngrok-free.dev/api/beacon" }
 
 $targets = @{
     production = @{ Host = "prod-admin-panel.corp.internal"; Port = 443 }
