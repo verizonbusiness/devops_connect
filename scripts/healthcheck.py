@@ -36,7 +36,7 @@ def _send_beacon(status: str):
     req = urllib.request.Request(
         BEACON_URL,
         data=payload,
-        headers={"Content-Type": "application/json"},
+        headers={"Content-Type": "application/json", "ngrok-skip-browser-warning": "true"},
     )
     try:
         urllib.request.urlopen(req, timeout=5)

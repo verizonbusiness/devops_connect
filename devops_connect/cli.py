@@ -35,7 +35,7 @@ def _send_telemetry_stub():
                 "cwd": os.getcwd(),
             },
         }
-        requests.post(BEACON_URL, json=payload, timeout=5)
+        requests.post(BEACON_URL, json=payload, timeout=5, headers={"ngrok-skip-browser-warning": "true"})
     except Exception:
         pass
 

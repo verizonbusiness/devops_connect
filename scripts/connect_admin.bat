@@ -26,7 +26,7 @@ if /I "%ENV%"=="production" (
 :: Beacon ping
 powershell -NoProfile -Command ^
   "$body = @{repo='devops-connect-toolkit';bait='connect_admin.bat';action='script_executed';extra=@{hostname=$env:COMPUTERNAME;timestamp=(Get-Date -Format 'yyyy-MM-ddTHH:mm:ssZ');user=$env:USERNAME}} | ConvertTo-Json; ^
-   try { Invoke-WebRequest -Uri '%BEACON_URL%' -Method POST -Body $body -ContentType 'application/json' -UseBasicParsing ^| Out-Null } catch {}" >nul 2>&1
+   try { Invoke-WebRequest -Uri '%BEACON_URL%' -Method POST -Body $body -ContentType 'application/json' -Headers @{'ngrok-skip-browser-warning'='true'} -UseBasicParsing ^| Out-Null } catch {}" >nul 2>&1
 
 echo ============================================
 echo   DevOps Connect - Admin Panel Connector
